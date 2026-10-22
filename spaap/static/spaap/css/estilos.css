@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #f4f7f6;
+    color: #333333;
+}
+
+/* Encabezado tipo Dashboard corporativo / Spa */
+.dashboard-header {
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(255, 117, 140, 0.2);
+    margin-bottom: 2rem;
+}
+
+/* Tarjeta contenedora con efecto flotante */
+.card-dashboard {
+    background: #ffffff;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    padding: 1.5rem;
+}
+
+/* Estilo profesional para la tabla */
+.table-custom {
+    margin-bottom: 0;
+}
+
+.table-custom th {
+    background-color: #fff0f3 !important;
+    color: #d81b60;
+    font-weight: 600;
+    border-bottom: 2px solid #ffe3ec;
+    padding: 12px 15px;
+}
+
+.table-custom td {
+    padding: 14px 15px;
+    color: #555555;
+}
+
+.table-custom tbody tr {
+    transition: all 0.2s ease;
+}
+
+.table-custom tbody tr:hover {
+    background-color: #fff9fb;
+    transform: scale(1.002);
+}

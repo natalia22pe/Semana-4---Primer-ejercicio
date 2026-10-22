@@ -1,0 +1,53 @@
+{% extends 'spaap/base.html' %}
+
+{% block title %}Contacto - Nail Spa{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row g-5 align-items-center">
+        <!-- Información de Contacto -->
+        <div class="col-md-6">
+            <h1 class="fw-bold text-pink mb-4">Contáctanos & Visítanos</h1>
+            <p class="text-muted mb-4">Estamos listos para atenderte y darle el mejor cuidado a tus uñas. Escríbenos directamente o agenda tu cita previa.</p>
+
+            <ul class="list-unstyled space-y-3">
+                <li class="mb-3">
+                    <strong>📱 WhatsApp / Teléfono:</strong> 
+                    <br>
+                    <a href="https://wa.me/573009648715" target="_blank" class="text-decoration-none text-dark fs-5 fw-semibold">+57 300 964 8715</a>
+                </li>
+                <li class="mb-3">
+                    <strong>🕒 Horario de Atención:</strong>
+                    <br>Lunes a Sábado: 8:00 AM - 7:00 PM
+                </li>
+                <li class="mb-3">
+                    <strong>📍 Dirección:</strong>
+                    <br>Atención en Spa / A Domicilio
+                </li>
+            </ul>
+
+            <a href="https://wa.me/573009648715?text=Hola!%20Deseo%20obtener%20más%20información%20sobre%20sus%20servicios" 
+               target="_blank" 
+               class="btn btn-success btn-lg rounded-pill shadow-sm px-4 mt-3">
+               💬 Hablar por WhatsApp
+            </a>
+        </div>
+
+        <!-- Tarjeta de Bienvenida / Mapa promocional -->
+        <div class="col-md-6">
+            <div class="card border-0 shadow-sm rounded-4 p-5 text-center bg-light">
+                <h3 class="fw-bold mb-3">💖 Agenda Tu Cita Hoy</h3>
+                <p class="text-muted">Haz clic en el botón de abajo para ser redirigida instantáneamente a nuestro chat de atención personalizada.</p>
+                <div class="my-4">
+                    <span style="font-size: 4rem;">📲</span>
+                </div>
+                <a href="https://wa.me/573009648715?text=Hola,%20me%20gustaría%20agendar%20una%20cita" 
+                   target="_blank" 
+                   class="btn btn-danger btn-lg rounded-pill fw-bold">
+                   Escribir al 300 964 8715
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

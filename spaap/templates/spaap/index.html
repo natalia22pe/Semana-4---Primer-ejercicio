@@ -1,0 +1,43 @@
+{% extends 'spaap/base.html' %}
+
+{% load static %}
+
+{% block title %}Inicio - Nail Spa{% endblock %}
+
+{% block content %}
+<!-- Banner Principal -->
+<header class="hero-section text-white text-center py-5" style="background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);">
+    <div class="container py-5">
+        <h1 class="display-4 fw-bold mb-3">El cuidado perfecto para tus manos y pies</h1>
+        <p class="lead mb-4">Disfruta de las últimas tendencias en manicure, pedicure y diseño de uñas acrílicas.</p>
+        <a href="{% url 'servicios' %}" class="btn btn-light btn-lg text-pink fw-semibold px-4 shadow">Ver Nuestros Servicios</a>
+    </div>
+</header>
+
+<!-- Sección de Bienvenida / Características -->
+<div class="container my-5 py-4">
+    <div class="row text-center g-4">
+        <div class="col-md-4">
+            <div class="p-4 border rounded-4 shadow-sm bg-white h-100">
+                <h3>✨</h3>
+                <h5 class="fw-bold mt-3">Diseños Exclusivos</h5>
+                <p class="text-muted small">Efecto espejo, uñas esculpidas, press-on y nail art personalizado a tu estilo.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-4 border rounded-4 shadow-sm bg-white h-100">
+                <h3>🌿</h3>
+                <h5 class="fw-bold mt-3">Productos de Calidad</h5>
+                <p class="text-muted small">Cuidamos la salud de tus uñas con esmaltes semipermanentes hipoalergénicos.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-4 border rounded-4 shadow-sm bg-white h-100">
+                <h3>💖</h3>
+                <h5 class="fw-bold mt-3">Atención Profesional</h5>
+                <p class="text-muted small">Un espacio diseñado para tu relajación, comodidad y bienestar total.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

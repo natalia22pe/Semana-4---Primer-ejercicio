@@ -15,10 +15,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+
+
 from django.contrib import admin
-from django.urls import path, include  # 1. Asegúrate de importar include
+from django.urls import path, include  
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('spaap.urls')),  # 2. Conecta la ruta principal con la app spaap
+    path('', include('spaap.urls')),  # Esto maneja todas las rutas de la app spaap
 ]

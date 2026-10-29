@@ -1,6 +1,6 @@
 {% extends 'spaap/base.html' %}
 
-{% load static %}
+{% load static %} #css 
 
 {% block title %}Inicio - Nail Spa{% endblock %}
 
@@ -11,6 +11,7 @@
         <h1 class="display-4 fw-bold mb-3">El cuidado perfecto para tus manos y pies</h1>
         <p class="lead mb-4">Disfruta de las últimas tendencias en manicure, pedicure y diseño de uñas acrílicas.</p>
         <a href="{% url 'servicios' %}" class="btn btn-light btn-lg text-pink fw-semibold px-4 shadow">Ver Nuestros Servicios</a>
+        <a href="{% url 'crea_Cita' %}" class="btn btn-primary">Agendar Cita</a>
     </div>
 </header>
 

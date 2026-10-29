@@ -1,0 +1,76 @@
+/* Contenedor principal del formulario de citas */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ffe6eb;
+}
+
+/* Estilo para los campos que genera Django con form.as_p */
+form p {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Etiquetas (labels) de los campos */
+form label {
+    font-weight: 600;
+    color: #4a4a4a;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Cajas de texto, selectores y campos de fecha */
+form input[type="text"],
+form input[type="datetime-local"],
+form input[type="email"],
+form input[type="password"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fdfdfd;
+}
+
+/* Efecto cuando haces clic en un campo (focus) */
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #ff758c;
+    box-shadow: 0 0 0 0.2rem rgba(255, 117, 140, 0.25);
+    outline: none;
+    background-color: #fff;
+}
+
+/* Botón de envío personalizado */
+form button[type="submit"],
+.btn-primary {
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50rem;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 15px rgba(255, 117, 140, 0.4);
+}
+
+/* Efecto hover en el botón */
+form button[type="submit"]:hover,
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 117, 140, 0.6);
+    background: linear-gradient(135deg, #fa637d 0%, #ff6da4 100%);
+}

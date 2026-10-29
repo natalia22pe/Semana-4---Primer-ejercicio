@@ -1,0 +1,34 @@
+{% extends 'spaap/base.html' %}
+{% load static %} 
+
+{% block title %}Gestión de Cita - Nail Spa{% endblock %} 
+
+{% block content %}
+<div class="container my-5" style="max-width: 600px;">
+    <!-- Título dinámico -->
+    <h2 class="text-center fw-bold mb-4" style="color: #ff758c;">
+        {{ titulo|default:"Reserva tu Cita" }}
+    </h2>
+    
+    <form method="POST" class="p-4 bg-white rounded-4 shadow-sm border">
+        {% csrf_token %} 
+        {{ form.as_p }}
+        
+        <!-- Línea divisoria personalizada -->
+        <hr style="border: 0; height: 1px; background: #ffe6eb; margin: 25px 0;">
+        
+        <!-- Contenedor para los botones -->
+        <div class="d-flex gap-2">
+            <!-- Botón de Guardar / Enviar -->
+            <button type="submit" class="btn flex-grow-1 py-2 fw-semibold text-white shadow-sm" style="background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%); border: none; border-radius: 8px;">
+                Guardar Cita
+            </button>
+            
+            <!-- Botón para cancelar o regresar -->
+            <a href="{% url 'citas' %}" class="btn btn-outline-secondary py-2 px-4 fw-semibold" style="border-radius: 8px;">
+                Cancelar
+            </a>
+        </div>
+    </form>
+</div>
+{% endblock %}
